@@ -32,11 +32,14 @@ x1 x2 y1 y2 used
 (y2-y1) use Math.pow()
 add x after it gets squared and y after it gets squared
 use Math.sqrt() to find square root
+return the result as a double
+
 toString
 creates a new String that contains the information.
-Information is x1 y1, x2 y2, slope, y intercept
+Information is x1 y1, x2 y2, slope, y intercept and distance
 
-
+findYWithOnlyX
+takes the 3rd x value and plugs it into y=mx+b
 
 EquationRunner.java
 import a Scanner and set up Scanner.
