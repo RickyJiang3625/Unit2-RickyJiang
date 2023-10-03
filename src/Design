@@ -1,0 +1,43 @@
+LinearEquation class
+
+Instance Variables:
+x
+x2
+y1
+y2
+
+
+Constructor
+	public LinearEquation(double x,double y)
+
+
+Methods
+calculateSlope()
+(y2-y1)/(x2-x1)
+Takes x1 x2 y1 and y2 as parameters and calculates the slope.
+Divides y2-y1 by x2-x1
+Stores result in double slope
+return slope as a double
+Stores y2-y1 as numerator
+Stores x2-x1 as denominator
+
+CalculateYIntercept
+Takes x1 and y1 and plugs it in b= y-mx
+m is the slope
+solves for b
+returns y=numerator//denominator+b
+distanceBetweenPoints
+x1 x2 y1 y2 used
+(x2-x1) use Math.pow()
+(y2-y1) use Math.pow()
+add x after it gets squared and y after it gets squared
+use Math.sqrt() to find square root
+toString
+creates a new String that contains the information.
+Information is x1 y1, x2 y2, slope, y intercept
+
+
+
+EquationRunner.java
+import a Scanner and set up Scanner.
+
