@@ -5,10 +5,15 @@ x
 x2
 y1
 y2
+yIntercept
+x3
+y3
+
 
 
 Constructor
-	public LinearEquation(double x,double y)
+	public LinearEquation(int x,int y)
+	public LinearEquation(int x)
 
 
 Methods
@@ -18,6 +23,7 @@ Takes x1 x2 y1 and y2 as parameters and calculates the slope.
 Divides y2-y1 by x2-x1
 Stores result in double slope
 return slope as a double
+use Math.round((slope*100.0))/100.0) to round to nearest hundredth
 Stores y2-y1 as numerator
 Stores x2-x1 as denominator
 
@@ -26,6 +32,7 @@ Takes x1 and y1 and plugs it in b= y-mx
 m is the slope
 solves for b
 returns y=numerator//denominator+b
+
 distanceBetweenPoints
 x1 x2 y1 y2 used
 (x2-x1) use Math.pow()
@@ -36,11 +43,30 @@ return the result as a double
 
 toString
 creates a new String that contains the information.
-Information is x1 y1, x2 y2, slope, y intercept and distance
+Information is x1 y1, x2 y2, slope, y intercept, distance, Slope Intercept form equation
 
-findYWithOnlyX
+findY3WithOnlyX
 takes the 3rd x value and plugs it into y=mx+b
+m and b are already known
+solves for y3
 
 EquationRunner.java
 import a Scanner and set up Scanner.
+ask for x1 y1 coordinates
+use substring method to get rid of parentheses
+use indexOf to get rid of comma
+use substring to find left and right of comma
+convert to int
+ask for x2 and y2 coordinates
+use substring method to get rid of parentheses
+use indexOf to get rid of comma
+use substring to find left and right of comma
+convert to int
+calculateSlope
+calculateYIntercept
+calculateDistance
+toString
+ask for x3 coordinate
+findY3WithOnlyX
+
 

@@ -1,17 +1,27 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+Scanner s=new Scanner(System.in);
+System.out.print("Enter first xy coordinate: ");
+String first=s.nextLine();
+        String firstNoParentheses=first.substring(1,4);
+        int noComma=firstNoParentheses.indexOf(",");
+        String noCommaYesX=firstNoParentheses.substring(0,noComma);
+        String noCommaYesY=firstNoParentheses.substring(noComma+1,3);
+     int firstX=  Integer.parseInt(noCommaYesX);
+     int firstY  =Integer.parseInt(noCommaYesY);
+        System.out.print("Enter second xy coordinate: ");
+        String second=s.nextLine();
+        String secondNoParentheses=second.substring(1,4);
+        int secondNoComma=secondNoParentheses.indexOf(",");
+        String secondNoCommaYesX=secondNoParentheses.substring(0,noComma);
+        String secondNoCommaYesY=secondNoParentheses.substring(noComma+1,3);
+        int secondX=  Integer.parseInt(secondNoCommaYesX);
+        int secondY  =Integer.parseInt(secondNoCommaYesY);
+        LinearEquation Equation=new LinearEquation(firstX,firstY,secondX,secondY);
+        System.out.print(Equation.calculateSlope());
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+
     }
 }
