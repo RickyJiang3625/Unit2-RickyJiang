@@ -19,8 +19,13 @@ String first=s.nextLine();
         int secondX=  Integer.parseInt(secondNoCommaYesX);
         int secondY  =Integer.parseInt(secondNoCommaYesY);
         LinearEquation Equation=new LinearEquation(firstX,firstY,secondX,secondY);
-        System.out.println(firstNoParentheses);
-        System.out.print(noCommaYesX+noCommaYesY);
+        System.out.print(Equation.toString());
+        System.out.print("Enter third X coordinate:");
+        String third=s.nextLine();
+        int thirdCoord=Integer.parseInt(third);
+        int a=thirdCoord;
+        LinearEquation Equation2=new LinearEquation(thirdCoord);
+        Equation2.thirdCoords();
 
 
 
