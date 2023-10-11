@@ -7,7 +7,7 @@ y1
 y2
 yIntercept
 x3
-y3
+
 
 
 
@@ -35,8 +35,7 @@ returns y=numerator//denominator+b
 
 distanceBetweenPoints
 x1 x2 y1 y2 used
-(x2-x1) use Math.pow()
-(y2-y1) use Math.pow()
+multiply differenceOfX and differenceOfY by themselves
 add x after it gets squared and y after it gets squared
 use Math.sqrt() to find square root
 return the result as a double
